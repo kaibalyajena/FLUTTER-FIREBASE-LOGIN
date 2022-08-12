@@ -22,6 +22,31 @@ class _LoginPageState extends State<LoginPage> {
               image: DecorationImage(
                   image: AssetImage("img/loginimg.png"), fit: BoxFit.cover)),
         ),
+        Container(
+          margin: const EdgeInsets.only(left: 20, right: 20),
+          width: w,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Hello",
+                style: TextStyle(fontSize: 70, fontWeight: FontWeight.bold),
+              ),
+              Text(
+                "Signin to your account",
+                style: TextStyle(color: Colors.amber, fontSize: 18),
+              ),
+              SizedBox(
+                height: h / 50,
+              ),
+              TextField(
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30))),
+              )
+            ],
+          ),
+        )
       ]),
     );
   }
