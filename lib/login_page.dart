@@ -37,12 +37,58 @@ class _LoginPageState extends State<LoginPage> {
                 style: TextStyle(color: Colors.amber, fontSize: 18),
               ),
               SizedBox(
+                height: h / 25,
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                          blurRadius: 10,
+                          offset: Offset(1, 1),
+                          color: Colors.grey.withOpacity(0.5))
+                    ],
+                    borderRadius: BorderRadius.circular(30),
+                    color: Colors.white),
+                child: TextField(
+                  decoration: InputDecoration(
+                      enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          borderSide:
+                              BorderSide(color: Colors.white, width: 1)),
+                      focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          borderSide:
+                              BorderSide(color: Colors.white, width: 1)),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30))),
+                ),
+              ),
+              SizedBox(
                 height: h / 50,
               ),
-              TextField(
-                decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(30))),
+              Container(
+                decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                          blurRadius: 10,
+                          offset: Offset(1, 1),
+                          color: Colors.grey.withOpacity(0.5))
+                    ],
+                    borderRadius: BorderRadius.circular(30),
+                    color: Colors.white),
+                child: TextField(
+                  decoration: InputDecoration(
+                      enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          borderSide:
+                              BorderSide(color: Colors.white, width: 1)),
+                      focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          borderSide:
+                              BorderSide(color: Colors.white, width: 1)),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30))),
+                ),
               )
             ],
           ),
