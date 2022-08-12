@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
                 style: TextStyle(fontSize: 70, fontWeight: FontWeight.bold),
               ),
               Text(
-                "Signin to your account",
+                "Sign into your account !!",
                 style: TextStyle(color: Colors.amber, fontSize: 18),
               ),
               SizedBox(
@@ -45,7 +45,8 @@ class _LoginPageState extends State<LoginPage> {
                       BoxShadow(
                           blurRadius: 10,
                           offset: Offset(1, 1),
-                          color: Colors.grey.withOpacity(0.5))
+                          spreadRadius: 10,
+                          color: Colors.grey.withOpacity(0.2))
                     ],
                     borderRadius: BorderRadius.circular(30),
                     color: Colors.white),
@@ -72,7 +73,8 @@ class _LoginPageState extends State<LoginPage> {
                       BoxShadow(
                           blurRadius: 10,
                           offset: Offset(1, 1),
-                          color: Colors.grey.withOpacity(0.5))
+                          spreadRadius: 10,
+                          color: Colors.grey.withOpacity(0.2))
                     ],
                     borderRadius: BorderRadius.circular(30),
                     color: Colors.white),
