@@ -91,6 +91,15 @@ class _LoginPageState extends State<LoginPage> {
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30))),
                 ),
+              ),
+              SizedBox(
+                height: h / 80,
+              ),
+              Row(
+                children: [
+                  Expanded(child: Container()),
+                  Text("Forgot your password ?")
+                ],
               )
             ],
           ),
