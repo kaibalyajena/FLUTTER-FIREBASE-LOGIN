@@ -100,6 +100,45 @@ class _LoginPageState extends State<LoginPage> {
                   Expanded(child: Container()),
                   Text("Forgot your password ?")
                 ],
+              ),
+              SizedBox(
+                height: h / 15,
+              ),
+              Center(
+                child: Container(
+                  margin: EdgeInsets.all(0),
+                  width: w / 2.2,
+                  height: h * 0.07,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      image: DecorationImage(
+                          image: AssetImage("img/loginbtn.png"),
+                          fit: BoxFit.cover)),
+                  child: Center(
+                    child: Text(
+                      "Sign in",
+                      style: TextStyle(
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white70),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: h / 10,
+              ),
+              Center(
+                child: RichText(
+                  text: TextSpan(
+                      text: "Don't have an account? ",
+                      style: TextStyle(color: Colors.grey, fontSize: 15),
+                      children: [
+                        TextSpan(
+                            text: "Create",
+                            style: TextStyle(color: Colors.black, fontSize: 15))
+                      ]),
+                ),
               )
             ],
           ),
