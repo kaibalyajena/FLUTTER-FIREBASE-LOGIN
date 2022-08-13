@@ -120,7 +120,7 @@ class _LoginPageState extends State<LoginPage> {
                       style: TextStyle(
                           fontSize: 25,
                           fontWeight: FontWeight.bold,
-                          color: Colors.white70),
+                          color: Colors.white),
                     ),
                   ),
                 ),
@@ -136,7 +136,10 @@ class _LoginPageState extends State<LoginPage> {
                       children: [
                         TextSpan(
                             text: "Create",
-                            style: TextStyle(color: Colors.black, fontSize: 15))
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold))
                       ]),
                 ),
               )
