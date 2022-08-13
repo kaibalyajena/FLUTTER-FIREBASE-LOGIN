@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.amber,
       ),
       //home: LoginPage(),
-      home: WelcomePage(),
+      home: LoginPage(),
     );
   }
 }
