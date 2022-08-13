@@ -1,4 +1,7 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_firebase_login/login_page.dart';
+import 'package:get/get.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({Key? key}) : super(key: key);
@@ -114,7 +117,7 @@ class SignUpPage extends StatelessWidget {
                           fit: BoxFit.cover)),
                   child: Center(
                     child: Text(
-                      "Sign up",
+                      "Sign up ",
                       style: TextStyle(
                           fontSize: 25,
                           fontWeight: FontWeight.bold,
@@ -122,6 +125,25 @@ class SignUpPage extends StatelessWidget {
                     ),
                   ),
                 ),
+              ),
+              SizedBox(
+                height: h / 50,
+              ),
+              Center(
+                child: RichText(
+                    text: TextSpan(
+                        text: "Already have an account? ",
+                        style: TextStyle(color: Colors.grey),
+                        children: [
+                      TextSpan(
+                          text: "click here",
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = (() {
+                              Get.to(LoginPage());
+                            }),
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, color: Colors.black))
+                    ])),
               ),
               SizedBox(
                 height: h / 10,
