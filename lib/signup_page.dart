@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
+    List images = ["g.png", "t.png", "f.png"];
     return Scaffold(
       backgroundColor: Colors.white,
       body: Column(children: [
@@ -134,10 +134,25 @@ class SignUpPage extends StatelessWidget {
                   ),
                 ),
               ),
-              Wrap(
-                children: List<Widget>.generate(3, (index) {
-                  return CircleAvatar();
-                }),
+              SizedBox(
+                height: h / 50,
+              ),
+              Center(
+                child: Wrap(
+                  children: List<Widget>.generate(3, (index) {
+                    return Container(
+                      margin: EdgeInsets.only(right: 10),
+                      child: CircleAvatar(
+                        radius: 30,
+                        backgroundColor: Colors.amber,
+                        child: CircleAvatar(
+                          radius: 25,
+                          backgroundImage: AssetImage("img/" + images[index]),
+                        ),
+                      ),
+                    );
+                  }),
+                ),
               )
             ],
           ),
